@@ -15,7 +15,7 @@ const client = new Client({
 client.once('ready', async () => {
   console.log(`✅ Logged in as ${client.user.tag}`);
 
-  const channel = await client.channels.fetch("ID_CHANNEL_HERE"); // ← عدل هذا للإيدي حقك
+  const channel = await client.channels.fetch("1359975813679677481"); // ← عدل هذا للإيدي حقك
   const image = new AttachmentBuilder('./assets/colors-banner.png');
 
   const colorNames = Object.keys(require('./events/interactionCreate').colorRoles);
